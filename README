@@ -1,0 +1,11 @@
+#
+# PAM configuration cyberpipe
+#
+
+mv /etc/pam.d/common-account /etc/pam.d/common-accountBACKUP
+mv /etc/pam.d/common-auth /etc/pam.d/common-authBACKUP
+mv /etc/pam.d/common-password /etc/pam.d/common-passwordBACKUP
+
+cp kiberpipa-ldap-pam/common-account /etc/pam.d/common-account
+cp kiberpipa-ldap-pam/common-auth /etc/pam.d/common-auth
+cp kiberpipa-ldap-pam/common-password /etc/pam.d/common-password
